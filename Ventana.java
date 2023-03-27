@@ -67,7 +67,11 @@ public class Ventana extends JFrame {
 		jm2.add(jmi11);
 		jm2.add(jmi21);
 		
+		JMenuItem jmi111 = new JMenuItem("Como Crear Cuenta");
+		JMenuItem jmi211 = new JMenuItem("Bloquear Cuenta");
 		
+		jm3.add(jmi111);
+		jm3.add(jmi211);
 		
 		//Paneles
 		
