@@ -1,4 +1,5 @@
-package Ventana;
+
+
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -42,23 +43,31 @@ public class Ventana extends JFrame {
 		jmb.setSize(this.getWidth(), 20);
 		//this.add(jmb);
 		this.setJMenuBar(jmb);
-		JMenu jm1 = new JMenu("Inicio");
-		JMenu jm2 = new JMenu("Cuenta");
-		JMenu jm3 = new JMenu("Estudiante");
-		JMenu jm4 = new JMenu("Ayuda");
+		//correccion de jmenu
+		JMenu jm1 = new JMenu("Cuenta");
+		JMenu jm2 = new JMenu("Menu");
+		JMenu jm3 = new JMenu("Ayuda");
 		
-		jm4.setEnabled(false);
+		
+		//añadiendo items
 		
 		jmb.add(jm1);
 		jmb.add(jm2);
 		jmb.add(jm3);
-		jmb.add(jm4);
 		
-		JMenuItem jmi1 = new JMenuItem("Acceder");
-		JMenuItem jmi2 = new JMenuItem("Registro");
+		JMenuItem jmi1 = new JMenuItem("Mi Cuenta");
+		JMenuItem jmi2 = new JMenuItem("Cerrar Sesion");
 		
-		jm2.add(jmi1);
-		jm2.add(jmi2);
+		jm1.add(jmi1);
+		jm1.add(jmi2);
+		
+		JMenuItem jmi11 = new JMenuItem("Lista Usuario");
+		JMenuItem jmi21 = new JMenuItem("Crear Usuario");
+		
+		jm2.add(jmi11);
+		jm2.add(jmi21);
+		
+		
 		
 		//Paneles
 		
@@ -197,7 +206,7 @@ public class Ventana extends JFrame {
 		
 		
 		//Acciones
-		jmi1.addActionListener(new ActionListener(){
+		jmi11.addActionListener(new ActionListener(){
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -208,7 +217,7 @@ public class Ventana extends JFrame {
 				repaint();
 			}});
 		
-		jmi2.addActionListener(new ActionListener() {
+		jmi21.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -299,3 +308,4 @@ public class Ventana extends JFrame {
 	}
 
 }
+

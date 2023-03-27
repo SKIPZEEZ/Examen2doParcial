@@ -1,6 +1,3 @@
-package Ventana;
-
-import Ventana.Ventana;
 
 public class Main {
 
