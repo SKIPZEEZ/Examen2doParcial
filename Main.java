@@ -1,13 +1,13 @@
-package prueba;
+package examen2;
 
 public class Main {
 
-	private static Window Window;
+	private static windows Window;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 			
-		Window = new Window();
+		Window = new windows();
 	}
 
 }
