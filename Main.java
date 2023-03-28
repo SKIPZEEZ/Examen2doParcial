@@ -1,9 +1,13 @@
+package prueba;
 
 public class Main {
 
+	private static Window Window;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Ventana v1 = new Ventana();
+			
+		Window = new Window();
 	}
 
 }
